@@ -1,10 +1,9 @@
 public struct AlgorithmHelper {
-    public private(set) var text = "Hello, World!"
-
+    
     public init() {
     }
 }
-open class Node<T> {
+public class Node<T> {
     let value: T
     public var neighbors: [Node<T>]
     var visited: Bool
@@ -16,7 +15,7 @@ open class Node<T> {
     }
 }
 
-open class Algorithm {
+public class Algorithm {
     public static let shared = Algorithm()
     private init() {}
     
