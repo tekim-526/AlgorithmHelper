@@ -26,7 +26,7 @@ e.neighbors = [b]
 f.neighbors = [c]
 
 // result
-let dfsResult = Algorithm.shared.dfs(startNode: a)//["a", "b", "d", "e", "c", "f"]
+let dfsResult = Algorithm.dfs(startNode: a)//["a", "b", "d", "e", "c", "f"]
 print(dfsResult)
 ``` 
 
@@ -50,7 +50,7 @@ e.neighbors = [b]
 f.neighbors = [c]
 
 // result
-let bfsResult = Algorithm.shared.bfs(startNode: a)//["a", "b", "c", "d", "e", "f"]
+let bfsResult = Algorithm.bfs(startNode: a)//["a", "b", "c", "d", "e", "f"]
 print(bfsResult)
 ``` 
 
