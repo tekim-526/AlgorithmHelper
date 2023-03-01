@@ -39,7 +39,7 @@ public class Algorithm {
             }
         }
         
-        return result//.reversed() // Return the array of values in DFS order (reversed from the stack order)
+        return result // Return the array of values in DFS order (reversed from the stack order)
     }
     
     // Define the BFS algorithm function
