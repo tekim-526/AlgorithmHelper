@@ -1,8 +1,3 @@
-public struct AlgorithmHelper {
-    
-    public init() {
-    }
-}
 public class Node<T> {
     let value: T
     public var neighbors: [Node<T>]
