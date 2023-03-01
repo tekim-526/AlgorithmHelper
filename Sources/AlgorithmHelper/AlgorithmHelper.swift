@@ -11,10 +11,7 @@ public class Node<T> {
 }
 
 public class Algorithm {
-    public static let shared = Algorithm()
-    private init() {}
-    
-    public func dfs<T>(startNode: Node<T>) -> [T] {
+    public static func dfs<T>(startNode: Node<T>) -> [T] {
         var result = [T]() // Initialize an array to hold the values in DFS order
         var stack = [Node<T>]() // Initialize a stack to hold the nodes to be visited
         stack.append(startNode) // Add the start node to the stack
@@ -38,7 +35,7 @@ public class Algorithm {
     }
     
     // Define the BFS algorithm function
-    public func bfs<T>(startNode: Node<T>) -> [T] {
+    public static func bfs<T>(startNode: Node<T>) -> [T] {
         var result = [T]() // Initialize an array to hold the values in BFS order
         var queue = [Node<T>]() // Initialize a queue to hold the nodes to be visited
         queue.append(startNode) // Add the start node to the queue
@@ -60,7 +57,7 @@ public class Algorithm {
         return result // Return the array of values in BFS order
     }
     
-    public func binarySearch<T: Comparable>(_ array: [T], num: T) -> Bool {
+    public static func binarySearch<T: Comparable>(_ array: [T], num: T) -> Bool {
         var start = 0
         var end = (array.count - 1)
         let array = array.sorted()
@@ -78,7 +75,7 @@ public class Algorithm {
         return false
     }
     
-    public func bruteForce<T: Equatable>(_ array: [T], value: T) -> Bool {
+    public static func bruteForce<T: Equatable>(_ array: [T], value: T) -> Bool {
         for element in array {
             if value == element {
                 return true
@@ -87,7 +84,7 @@ public class Algorithm {
         return false
     }
     
-    public func bruteForce<T: Equatable>(_ array: [T], value: T) -> T {
+    public static func bruteForce<T: Equatable>(_ array: [T], value: T) -> T {
         for element in array {
             if value == element {
                 return value
