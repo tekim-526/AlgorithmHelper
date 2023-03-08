@@ -1,4 +1,4 @@
-# AlgorithmHelper
+# AlgorithmHelper v.1.1.0
 
 ## **This is a library for people preparing for coding tests with Swift launguage.**
 
