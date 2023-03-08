@@ -31,7 +31,8 @@ public struct Heap<Element: Comparable> {
         elements.append(element)
         moveUp(from: elements.count - 1)
     }
-
+    
+    @discardableResult
     mutating public func pop() -> Element? {
         guard !isEmpty else { return nil }
         let lastIndex = elements.count - 1
