@@ -55,7 +55,7 @@ print(bfsResult)
 ``` 
 ## **📝 Example of use with Heap Data Structure** 
 ``` swift
-// Max Heap 
+// Max Heap usage
 var maxHeap = Heap<Int>(type: .maxHeap)
 maxHeap.push(30)
 maxHeap.push(20)
@@ -70,7 +70,7 @@ while !maxHeap.isEmpty {
     print(maxHeap.pop()!) // 50, 30, 20, 18, 9 ,6
 }
 
-// Min Heap
+// Min Heap usage
 var minHeap = Heap<Int>(type: .minHeap)
 minHeap.push(4)
 minHeap.push(2)
