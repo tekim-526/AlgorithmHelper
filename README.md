@@ -53,5 +53,34 @@ f.neighbors = [c]
 let bfsResult = Algorithm.bfs(startNode: a)//["a", "b", "c", "d", "e", "f"]
 print(bfsResult)
 ``` 
+## **📝 Example of use with Heap Data Structure** 
+``` swift
+// Max Heap 
+var maxHeap = Heap<Int>(type: .maxHeap)
+maxHeap.push(30)
+maxHeap.push(20)
+maxHeap.push(18)
+maxHeap.push(9)
+maxHeap.push(6)
+maxHeap.push(50)
 
-### We are planning to update Heap and other algorithms later.
+print("max Heap:", maxHeap) // Heap<Int>(elements: [50, 20, 30, 9, 6, 18], type: __lldb_expr_86.HeapType.maxHeap)
+
+while !maxHeap.isEmpty {
+    print(maxHeap.pop()!) // 50, 30, 20, 18, 9 ,6
+}
+
+// Min Heap
+var minHeap = Heap<Int>(type: .minHeap)
+minHeap.push(4)
+minHeap.push(2)
+minHeap.push(8)
+minHeap.push(1)
+
+print("min Heap",minHeap) // Heap<Int>(elements: [1, 2, 8, 4], type: __lldb_expr_88.HeapType.minHeap)
+
+while !minHeap.isEmpty {
+    print(minHeap.pop()!) // 1, 2, 4, 8
+}
+```
+### We are planning to update other algorithms later.
